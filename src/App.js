@@ -9,7 +9,7 @@ import ColorBlindExercises from './components/ColorBlindExercises/ColorBlindExer
 import Doctors from './components/doctors';
 import About from './components/about';
 import Contact from './components/contact';
-import StartTest from './components/startTest'; 
+import StartTest from './components/blindTest/startTest'; 
 
 function App() {
   return (
