@@ -51,7 +51,7 @@ return(
                                     </div>
 
                                     <div class="col-lg-5 col-md-12">
-                                        <button class="nw-btn main_btn circle">get started
+                                        <button class="nw-btn main_btn2 circle">get started
                                             <span class="lnr lnr-arrow-right"></span>
                                         </button>
                                     </div>

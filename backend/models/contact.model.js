@@ -2,24 +2,27 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const doctorSchema = new Schema({
+const contactSchema = new Schema({
   name: { 
       type: String,
       required: true
     },
-  description: { 
+    address:{
       type: String,
       required: true
     },
-  fees: { 
-      type: Number,
+    subject:{
+      type: String,
       required: true
     },
-  date: { type: Date, required: true },
+    message: { 
+      type: String,
+      required: true
+    },
 }, {
   timestamps: true,
 });
 
-const doctors = mongoose.model('doctors', doctorSchema);
+const contact = mongoose.model('contactUs', contactSchema);
 
-module.exports = doctors;
+module.exports = contact;

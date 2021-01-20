@@ -1,0 +1,35 @@
+body {
+  background: #fff;
+}
+.sec-one {
+  background: #f5f5f5;
+  text-decoration: none;
+  font-size: 18px;
+}
+.sec-one .des {
+  color: #7c7c7c;
+}
+.sec-one .end {
+  font-variant: small-caps;
+  font-weight: 600;
+  color: #b9b9b9;
+}
+.d-name {
+  font-weight: 900;
+}
+
+.sec-two {
+  font-size: 19px;
+}
+.sec-two p {
+  color: #7c7c7c;
+}
+h2 {
+  font-weight: 600;
+}
+.sec-two .mem {
+  font-weight: 500;
+}
+.sec-two i {
+  color: #000;
+}

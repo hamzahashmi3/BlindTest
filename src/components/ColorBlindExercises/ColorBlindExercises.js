@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const ColorBlindExercises=()=>{
     return(
@@ -17,11 +18,11 @@ const ColorBlindExercises=()=>{
                 <div class="row">
                     <div class="single-recent-blog col-lg-4 col-md-4">
                         <div class="thumb">
+                        <Link to="/colornamingexercise" >
                             <img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt="" />
+                        </Link>
                         </div>
-                        <a href="#">
-                            <h4>Red-green color blind test</h4>
-                        </a>
+                        <Link to="/colornamingexercise" ><h4>Color Naming Exercise</h4></Link>
                         <p>
                         The test is to find the gap in a ‘C shape’. The test is able to determine the type and severity of the protan and deutan type of color blindness. 
                         </p>
@@ -35,11 +36,11 @@ const ColorBlindExercises=()=>{
                     </div>
                     <div class="single-recent-blog col-lg-4 col-md-4">
                         <div class="thumb">
+                        <Link to="/colorarrangementexercise" >
                             <img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt="" />
+                        </Link>
                         </div>
-                        <a href="#">
-                            <h4>Color arrangement test</h4>
-                        </a>
+                        <Link to="/colorarrangementexercise" ><h4>Color Arrangement Exercise</h4></Link>
                         <p>
                         The goal of this test is to arrange the color scales in proper spectrum order. It should take less than one minute to complete this test. 
                         </p>
@@ -53,11 +54,11 @@ const ColorBlindExercises=()=>{
                     </div>
                     <div class="single-recent-blog col-lg-4 col-md-4">
                         <div class="thumb">
+                        <Link to="/colormatchingexercise" >
                             <img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt="" />
+                        </Link>
                         </div>
-                        <a href="#">
-                            <h4>Color matching test</h4>
-                        </a>
+                        <Link to="/colormatchingexercise" ><h4>Color matching test</h4></Link>
                         <p>
                         The test is to match seven basic colors. The difficulty level is increasing. Complete one difficulty level takes about 1-2 minutes, the full game about 5 minutes   
                         </p>

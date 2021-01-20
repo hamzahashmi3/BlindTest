@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .bb1 {
+            background: #ddd;
+            border: none;
+        }
+
+        .in {
+            display: flex;
+            justify-content: center;
+        }
+
+        .st,
+        .nd {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 9px;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+        }
+
+        .b1 {
+            background: #156000;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b2 {
+            background: #605900;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b3 {
+            background: #296000;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b4 {
+            background: #785300;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b5 {
+            background: #005a00;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b6 {
+            background: #406000;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b7 {
+            background: #8e2200;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b8 {
+            background: #556000;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b9 {
+            background: #884100;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b10 {
+            background: #960000;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+/*
+        .b11 {
+            background: #785300;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b12 {
+            background: #785300;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b13 {
+            background: #785300;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b14 {
+            background: #785300;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b15 {
+            background: #785300;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b16 {
+            background: #785300;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b17 {
+            background: #785300;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b18 {
+            background: #785300;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .b19 {
+            background: #785300;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+*/
+
+        .block1 {
+            background: #fff;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .block2 {
+            background: #fff;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .block3 {
+            background: #fff;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .block4 {
+            background: #fff;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .block5 {
+            background: #fff;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .block6 {
+            background: #fff;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .block7 {
+            background: #fff;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .block8 {
+            background: #fff;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .block9 {
+            background: #fff;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+
+        .block10 {
+            background: #fff;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+/*
+        .block11 {
+            background: #00f;
+            height: 55px;
+            width: 20px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .block12 {
+            background: #f0f;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .block13 {
+            background: #00f;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+                .block14 {
+            background: #00f;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+                .block14 {
+            background: #00f;
+            height: 55px;
+            width: 55px;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px;
+        }
+*/
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row m-auto">
+            <div class="col-md-12">
+                <div class="well st shadow bg-light p-3 mb-5 rounded"><br>
+                    <div class="text-center">
+                        <button id="btn1" class="btn btn-outline-secondary btn-lg m-2">Red-Green</button>
+                        <button id="btn2" class="btn btn-outline-secondary btn-lg m-2">Protan</button>
+                        <button id="btn3" class="btn btn-outline-secondary btn-lg m-2">Deutran</button>
+                        <button id="btn4" class="btn btn-outline-secondary btn-lg m-2">Tritan</button>
+                    </div> <br />
+
+                    <h3 class="text-center"><b>Color arrangement game</b></h3>
+                    <p class="text-center">1. Arrange the colors!</p>
+                    <p class="text-center">2. To choose a color, tap it on the upper line!</p>
+                    <p class="text-center">3. Then tap on the position of the bottom line to put them there!</p>
+                    <p class="text-center">4. Once color scale is completed, push the 'READY' button!</p>
+                    <p class="text-center">5. You can change the order by putting back the color to a white position!</p><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+    </div>
+
+    <div class="container">
+        <div class="row m-auto">
+            <div class="col-md-12">
+                <div class="well nd shadow rounded  bb1"><br />
+                    <div class="row in">
+                        <div id="b1" class="block1 b1 rounded d-inline">
+                        </div>
+                        <div id="b2" class="block2 rounded d-inline">
+                        </div>
+                        <div id="b3" class="block3 b3 rounded d-inline">
+                        </div>
+                        <div  id="b4" class="block4 b4 rounded d-inline">
+                        </div>
+                        <div  id="b5" class="block5  rounded d-inline">
+                        </div>
+                        <div  id="b6" class="block6  rounded d-inline">
+                        </div>
+                        <div  id="b7" class="block7  rounded d-inline">
+                        </div>
+                        <div  id="b8" class="block8  rounded d-inline">
+                        </div>
+                        <div  id="b9" class="block9  rounded d-inline">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row in">
+                        <div id="b10" class="block1 b10 rounded d-inline">
+                        </div>
+                        <div  class="block2 rounded d-inline">
+                        </div>
+                        <div class="block3 rounded d-inline">
+                        </div>
+                        <div class="block4 rounded d-inline p-3">
+                        </div>
+                        <div class="block5 rounded d-inline p-3">
+                        </div>
+                        <div class="block6  rounded d-inline p-3">
+                        </div>
+                        <div class="block7 rounded d-inline p-3">
+                        </div>
+                        <div class="block8 rounded d-inline p-3">
+                        </div>
+                        <div  class="block9 rounded d-inline p-2">
+                        </div>
+                        <div class="block10 rounded d-inline p-2">
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="text-center">
+                        <button class="btn btn-outline-info btn-lg" id="reset">Ready</button>
+                    </div><br />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--    <p id="test1">This is a paragraph.</p>-->
+    <p id="test2">This is another paragraph.</p>
+
+    <p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("#b1").removeClass("block1");
+                $("#b1").addClass("b1");
+                $("#b2").removeClass("block2");
+                $("#b2").addClass("b2");
+                $("#b3").removeClass("block3");
+                $("#b3").addClass("b3");
+                $("#b4").removeClass("block4");
+                $("#b4").addClass("b4");
+                $("#b5").removeClass("block5");
+                $("#b5").addClass("b5");
+                $("#b6").removeClass("block6");
+                $("#b6").addClass("b6");
+                $("#b7").removeClass("block7");
+                $("#b7").addClass("b7");
+                $("#b8").removeClass("block8");
+                $("#b8").addClass("b8");
+                $("#b9").removeClass("block9");
+                $("#b9").addClass("b9");
+                $("#b10").removeClass("block10");
+                $("#b10").addClass("b10");
+//                $("#b11").removeClass("block11");
+////                $("#b11").addClass("b11");
+////                $("#b12").removeClass("block12");
+////                $("#b12").addClass("b12");
+////                $("#b13").removeClass("block13");
+////                $("#b13").addClass("b13");
+////                $("#b14").removeClass("block14");
+////                $("#b14").addClass("b14");
+////                $("#b15").removeClass("block15");
+////                $("#b15").addClass("b15");
+////                $("#b16").removeClass("block16");
+////                $("#b16").addClass("b16");
+////                $("#b17").removeClass("block17");
+////                $("#b17").addClass("b17");
+////                $("#b18").removeClass("block18");
+////                $("#b18").addClass("b18");
+////                $("#b19").removeClass("block19");
+////                $("#b19").addClass("b19");
+                //                $("b2").addClass("b2");
+            });
+            $("#btn2").click(function() {
+                $("#test2").html("<b>Hello world!, What's up</b>");
+            });
+            $("#btn3").click(function() {
+                $("#test3").val("John Doe");
+            });
+        });
+
+        // Create new link Element 
+//        var link = document.createElement('link');
+//
+//        // set the attributes for link element 
+//        link.rel = 'stylesheet';
+//
+//        link.type = 'text/css';
+//
+//        link.href = 'style3.css';
+//
+//        // Get HTML head element to append  
+//        // link element to it  
+//        document.getElementsByTagName('HEAD')[0].appendChild(link);
+    </script>
+
+
+
+</body>
+
+</html>
