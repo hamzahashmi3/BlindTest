@@ -24,7 +24,9 @@ const doctorsDetailRouter = require('./routes/doctorDetail');
 const doctorsRouter = require('./routes/doctors');
 const usersRouter = require('./routes/users');
 const contactRouter = require('./routes/contact');
+// const imgTestRouter = require('./routes/imgTest');
 
+// app.use('/startTset', imgTestRouter);
 app.use('/contact', contactRouter);
 app.use('/appointments', AppointmentBookingRouter);
 app.use('/doctors', doctorsRouter);

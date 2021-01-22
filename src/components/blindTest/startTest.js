@@ -4,62 +4,114 @@ import img from './timeout-notice.png'
 import "./design.css";
 import { Link } from 'react-router-dom';
 import Progress from 'react-progressbar';
+import ResultComplete from './resultComplete';
 
 
-// const one=new promise((resolve,reject)=>{
-//     setTimeOut(()=>{
-//         resolve('value');
-//     },3000)
-// })
-var value = 0;
+
 const StartTest=()=>{
-    let arr=[0,1,2,3,4,5,6,7,8,9];
-    let array=[];
-    let i = 5;
-    let algo = 5;
-    let ans = true
 
+
+    let arr=[
+        {
+            id:0,
+            value:1,
+            img: "img/Images for test/a1.png"
+        },
+        {
+            id:1,
+            value:2,
+            img: "img/Images for test/a2.png"
+        },
+        {
+            id:2,
+            value:3,
+            img: "img/Images for test/c3.png"
+        },
+        {
+            id:3,
+            value:4,
+            img: "img/Images for test/e4.png"
+        },
+        {
+            id:4,
+            value:5,
+            img: "img/Images for test/f5.png"
+        },
+        {
+            id:5,
+            value:6,
+            img: "img/Images for test/h6.png"
+        },
+        {
+            id:6,
+            value:7,
+            img: "img/Images for test/k7.png"
+        },
+        {
+            id:7,
+            value:8,
+            img: "img/Images for test/o8.png"
+        },
+        {
+            id:8,
+            value:9,
+            img: "img/Images for test/q9.png"
+        }
+        ];
+
+
+    let array=[];
+    let i = 4;
+    let arrid = arr[i].id
+    let arrValue = arr[i].value
+    let ans = true;
+    let image = arr[i].img;
+    let uservalue = 5;
+        console.log("arrid = "+arrid, "arrValue = "+arrValue, "image = "+image)
     const[num, setNum] = useState(1);
+    // const [image, setImage] = useState("img/Images for test/a5.png")
+ 
+
 
 
     let one=()=>{
-        value = 1
-        test(algo,value)
+        uservalue = 1
+        test(arrValue,uservalue)
     }
     let two=()=>{
-        value = 2
-        test(algo,value)
+        uservalue = 2
+        test(arrValue,uservalue)
     }
     let three=()=>{
-        value = 3
-        test(algo,value)
+        uservalue = 3
+        test(arrValue,uservalue)
     }
     let four=()=>{
-        value = 4
-        test(algo,value)
+        uservalue = 4
+        test(arrValue,uservalue)
     }
     let five=()=>{
-        value = 5
-        test(algo,value)
+        uservalue = 5
+        test(arrValue,uservalue)
     }
     let six=()=>{
-        value = 6
-        test(algo,value)
+        uservalue = 6
+        test(arrValue,uservalue)
     }
     let seven=()=>{
-        value = 7
-        test(algo,value)
+        uservalue = 7
+        test(arrValue,uservalue)
     }
     let eight=()=>{
-        value = 8
-        test(algo,value)
+        uservalue = 8
+        test(arrValue,uservalue)
     }
     let nine=()=>{
-        value = 9
-        test(algo,value)
+        uservalue = 9
+        test(arrValue,uservalue)
     }
-    const test=(algo,value)=>{
-        if(algo==value){
+    const test=(arrValue,uservalue)=>{
+        if(arrValue==uservalue){
             ans=true
         }else{
             ans=false
@@ -68,35 +120,71 @@ const StartTest=()=>{
         CAT(ans)
         return ans
     }
+    
+    const imgId=(arrid)=>{
+       image = arr[arrid].img
+       document.getElementById('img').src = image
+       console.log("handler = "+arrid,image)
+    }
+    const imgIdfalse=(arrid)=>{
+        image = process.env.PUBLIC_URL+arr[arrid].img
+        document.getElementById('img').src = image
+        console.log("handler = "+arrid,image)
+     }
+
+    const success=()=>{
+        window.location.reload();
+    } 
+
     const CAT=(ans)=>{
         do{
-            console.log("")
-            if(ans==true){
+            console.log("CAT ans"+ans)
+                if(ans==true){
               array.push(i);
               i++;
+              if(i==0|| i==8){
+                  success()
+              }
+              imgId(i-1)
                 if(array.includes(i)==true){
                   i++
                   }else{
-                        algo = i;
+                        arrValue = i;
+                        if(i==0|| i==8){
+                            success()
+                        }
+                        imgId(arrValue-1);
                         console.log("CAT will return ++"+i);
                         console.log("") 
                   }
               }else{
                 array.push(i);
                 i--;
+                if(i==0|| i==8){
+                    success()
+                }
+                imgIdfalse(i-1)
                   if(array.includes(i)==true){
                     i--;
                   }else{
-                        algo = i;
+                        arrValue = i;
+                        if(i==0|| i==8){
+                            success()
+                        }
+                        imgIdfalse(arrValue-1);
                         console.log("CAT will return -- = "+i);
                         console.log("") 
-                  }
+                  
               }
               console.log("values of array = "+array)
               console.log("loop repeated once");
-              console.log("")
+              console.log("")  
+            }
+            
+ 
           }while(array.includes(i)==true);
     }
+
     return(
         <div className="body">
             <div className="container-fluid">
@@ -134,7 +222,7 @@ const StartTest=()=>{
             <div className="container d-flex justify-content-center">
                 <div className="img">
                     {/* <img src={img} width="500px" alt="" /> */}
-                    <img src="img/Images for test/a1.png" width="500px" alt="" />
+                    <img src={image} id="img" width="500px" alt="" />
                 </div>
                 <div className="wrapper mt-5 ml-5">
                 <section className="num">

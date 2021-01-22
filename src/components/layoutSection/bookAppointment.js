@@ -80,7 +80,7 @@ class Bookappointment extends Component{
                         <div class="row justify-content-between align-items-center appointment-wrap">
                             <div class="col-lg-5 col-md-6 appointment-left">
                                 <h1>
-                                    Servicing Hours
+                                    Services Hours
                                 </h1>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

@@ -15,6 +15,7 @@ import ColorMatchingExercise from './components/ColorBlindExercises/colorMatchng
 import colorNamingExercise from './components/ColorBlindExercises/colorNamingexercise/colorNamingExercise';
 import DoctorDetail from './components/Doctors/doctorDetail';
 import Appoinntments from './components/layoutSection/showAppointment';
+import ResultComplete from './components/blindTest/resultComplete'
 
 class App extends Component{  
 
@@ -33,6 +34,7 @@ class App extends Component{
 
                 <LayoutRoute path="/startTset" exact component={StartTest} />
                 
+                <MainLayoutRoute path="resultComplete" exact Component={ResultComplete} />
                 <MainLayoutRoute path="/ColorBlind-Exercises" exact component={ColorBlindExercises} />
                 <MainLayoutRoute path="/colorarrangementexercise" exact component={ColorArrangementExercise} />
                 <MainLayoutRoute path="/colormatchingexercise" exact component={ColorMatchingExercise} />
