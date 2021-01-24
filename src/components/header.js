@@ -95,7 +95,8 @@ class Header extends Component {
                     <div className="container">
                         {/* <!-- Brand and toggle get grouped for better mobile display --> */}
                                         <Link to="/" className="navbar-brand logo_h">
-                                            <img src="img/logo.png" alt="" />
+                                            <h3 style={{color:'skyblue'}}>Color Vision Deficiency Tests &amp; Exercises</h3>
+                                            {/* <img src="img/logo.png" alt="" /> */}
                                         </Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                          aria-expanded="false" aria-label="Toggle navigation">

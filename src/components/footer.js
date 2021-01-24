@@ -65,7 +65,7 @@ return(
 
             <div class="row footer-bottom d-flex justify-content-between">
                 <p class="col-lg-8 col-sm-12 footer-text m-0 text-light" >
-                    All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <Link to="#" target="_blank">TechnoCannons</Link>.</p>
+                    All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <Link to="#" target="_blank">Hamza, Amir &amp; Hira </Link>.</p>
                 <div class="col-lg-4 col-sm-12 footer-social">
                     <Link to="#">
                         <i class="fa fa-facebook"></i>
